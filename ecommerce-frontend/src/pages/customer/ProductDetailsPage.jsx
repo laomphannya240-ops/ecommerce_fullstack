@@ -148,7 +148,7 @@ export default function ProductDetailsPage() {
           </div>
 
           <div className="mt-3 flex items-center gap-3">
-            <span className="text-3xl font-bold text-blue-600">${Number(price).toFixed(2)}</span>
+            <span className="text-3xl font-bold text-violet-600">${Number(price).toFixed(2)}</span>
             {product.sale_price && (
               <span className="text-lg text-slate-400 line-through">
                 ${Number(product.price).toFixed(2)}
@@ -190,7 +190,7 @@ export default function ProductDetailsPage() {
               type="button"
               onClick={addToCart}
               disabled={product.stock_quantity <= 0}
-              className="inline-flex items-center gap-2 rounded-lg bg-blue-600 px-6 py-2 font-semibold text-white hover:bg-blue-700 disabled:opacity-50"
+              className="inline-flex items-center gap-2 rounded-lg bg-violet-600 px-6 py-2 font-semibold text-white hover:bg-violet-700 disabled:opacity-50"
             >
               <ShoppingCart size={18} /> Add to Cart
             </button>
@@ -285,7 +285,7 @@ export default function ProductDetailsPage() {
             <FieldError errors={reviewErrors} name="comment" />
             <button
               disabled={submitting}
-              className="w-full rounded-lg bg-blue-600 py-2 font-semibold text-white disabled:opacity-50"
+              className="w-full rounded-lg bg-violet-600 py-2 font-semibold text-white disabled:opacity-50"
             >
               {submitting ? 'Submitting...' : 'Submit Review'}
             </button>
@@ -305,7 +305,7 @@ export default function ProductDetailsPage() {
       )}
 
       <div className="mt-8">
-        <Link to="/shop" className="text-blue-600 hover:underline">
+        <Link to="/shop" className="text-violet-600 hover:underline">
           ← Back to shop
         </Link>
       </div>

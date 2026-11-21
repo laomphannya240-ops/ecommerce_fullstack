@@ -36,14 +36,14 @@ export default function ProductCard({ product }) {
         <p className="text-xs text-slate-500">{product.category?.name || 'Product'}</p>
         <h3 className="mt-1 line-clamp-2 font-semibold">{product.name}</h3>
         <div className="mt-2 flex items-center gap-2">
-          <span className="text-lg font-bold text-blue-600">${Number(price).toFixed(2)}</span>
+          <span className="text-lg font-bold text-violet-600">${Number(price).toFixed(2)}</span>
           {hasSale && <span className="text-sm text-slate-400 line-through">${Number(product.price).toFixed(2)}</span>}
         </div>
         <div className="mt-3 flex items-center justify-between">
           <span className={`text-xs ${product.stock_quantity > 0 ? 'text-green-600' : 'text-red-500'}`}>
             {product.stock_quantity > 0 ? `In stock (${product.stock_quantity})` : 'Out of stock'}
           </span>
-          <button onClick={handleAdd} disabled={product.stock_quantity <= 0} className="inline-flex items-center gap-1 rounded-md bg-blue-600 px-3 py-1.5 text-sm text-white hover:bg-blue-700 disabled:cursor-not-allowed disabled:opacity-50">
+          <button onClick={handleAdd} disabled={product.stock_quantity <= 0} className="inline-flex items-center gap-1 rounded-md bg-violet-600 px-3 py-1.5 text-sm text-white hover:bg-violet-700 disabled:cursor-not-allowed disabled:opacity-50">
             <ShoppingCart size={14} /> Add
           </button>
         </div>

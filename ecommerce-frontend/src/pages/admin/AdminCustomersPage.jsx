@@ -92,7 +92,7 @@ export default function AdminCustomersPage() {
                     <td>{customer.is_active ? 'Active' : 'Inactive'}</td>
                     <td className="py-2">
                       <div className="space-x-2">
-                        <button onClick={() => view(customer.id)} className="text-blue-600">
+                        <button onClick={() => view(customer.id)} className="text-violet-600">
                           View
                         </button>
                         <button

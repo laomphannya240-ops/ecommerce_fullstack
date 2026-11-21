@@ -61,7 +61,7 @@ export default function AdminCategoriesPage() {
         </div>
         <label className="flex items-center gap-2 text-sm"><input type="checkbox" checked={form.is_active} onChange={(e) => updateField('is_active', e.target.checked)} /> Active</label>
         <div className="flex gap-2">
-          <button className="rounded bg-blue-600 px-4 py-2 text-white">{editing ? 'Update' : 'Create'}</button>
+          <button className="rounded bg-violet-600 px-4 py-2 text-white">{editing ? 'Update' : 'Create'}</button>
           {editing && <button type="button" onClick={() => { setEditing(null); setForm(empty); setErrors({}); }} className="rounded border px-4 py-2 dark:border-slate-700">Cancel</button>}
         </div>
       </form>
@@ -70,7 +70,7 @@ export default function AdminCategoriesPage() {
           <tbody>
             {loading ? <tr><td className="p-3" colSpan="5">Loading...</td></tr> : items.map((c) => (
               <tr key={c.id} className="border-t dark:border-slate-800"><td className="p-3">{c.name}</td><td>{c.slug}</td><td>{c.products_count ?? 0}</td><td>{c.is_active ? 'Yes' : 'No'}</td>
-                <td className="space-x-2 py-2"><button onClick={() => edit(c)} className="text-blue-600">Edit</button><button onClick={() => remove(c.slug)} className="text-red-600">Delete</button></td></tr>
+                <td className="space-x-2 py-2"><button onClick={() => edit(c)} className="text-violet-600">Edit</button><button onClick={() => remove(c.slug)} className="text-red-600">Delete</button></td></tr>
             ))}
             {!loading && items.length === 0 && <tr><td className="p-3" colSpan="5">No categories.</td></tr>}
           </tbody></table>

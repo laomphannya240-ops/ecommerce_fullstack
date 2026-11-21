@@ -18,7 +18,7 @@ export default function ContactPage() {
           <input required placeholder="Your name" value={form.name} onChange={(e) => setForm({ ...form, name: e.target.value })} className="w-full rounded border px-3 py-2 dark:border-slate-700 dark:bg-slate-950" />
           <input required type="email" placeholder="Email address" value={form.email} onChange={(e) => setForm({ ...form, email: e.target.value })} className="w-full rounded border px-3 py-2 dark:border-slate-700 dark:bg-slate-950" />
           <textarea required rows={5} placeholder="Message" value={form.message} onChange={(e) => setForm({ ...form, message: e.target.value })} className="w-full rounded border px-3 py-2 dark:border-slate-700 dark:bg-slate-950" />
-          <button className="rounded-lg bg-blue-600 px-5 py-2 text-white">Send Message</button>
+          <button className="rounded-lg bg-violet-600 px-5 py-2 text-white">Send Message</button>
         </form>
         <div className="space-y-4 text-slate-600 dark:text-slate-400">
           <div className="rounded-xl border p-5 dark:border-slate-800"><h3 className="font-semibold text-slate-900 dark:text-slate-100">Address</h3><p className="mt-1 text-sm">Phnom Penh, Cambodia</p></div>

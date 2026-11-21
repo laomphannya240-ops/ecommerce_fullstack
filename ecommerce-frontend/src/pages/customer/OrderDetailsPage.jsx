@@ -56,7 +56,7 @@ export default function OrderDetailsPage() {
             <button
               type="button"
               onClick={() => navigate(`/payment/${order.payment.id}`)}
-              className="rounded-lg bg-blue-600 px-4 py-2 text-white"
+              className="rounded-lg bg-violet-600 px-4 py-2 text-white"
             >
               Pay Now
             </button>

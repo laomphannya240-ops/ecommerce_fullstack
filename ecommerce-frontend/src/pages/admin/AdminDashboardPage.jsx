@@ -75,7 +75,7 @@ export default function AdminDashboardPage() {
             <div key={day.date} className="flex flex-1 flex-col items-center gap-2">
               <div className="flex w-full flex-1 items-end">
                 <div
-                  className="w-full rounded-t bg-blue-500/80"
+                  className="w-full rounded-t bg-violet-500/80"
                   style={{ height: `${Math.max(4, (Number(day.revenue) / maxRevenue) * 100)}%` }}
                   title={`$${Number(day.revenue).toFixed(2)} · ${day.orders} orders`}
                 />

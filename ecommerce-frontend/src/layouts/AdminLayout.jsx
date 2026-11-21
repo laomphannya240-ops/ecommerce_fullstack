@@ -23,14 +23,14 @@ export default function AdminLayout() {
       <div className="flex min-h-screen">
         <aside className="hidden w-64 flex-col border-r border-slate-200 bg-white p-4 dark:border-slate-800 dark:bg-slate-950 md:flex">
           <div className="mb-6">
-            <Link to="/admin" className="text-xl font-bold text-blue-600">Admin Panel</Link>
+            <Link to="/admin" className="text-xl font-bold text-violet-600">Admin Panel</Link>
             <p className="text-xs text-slate-500 mt-1">{user?.name}</p>
           </div>
           <nav className="flex-1 space-y-1">
             {nav.map((item) => {
               const Icon = item.icon;
               return (
-                <NavLink key={item.to} to={item.to} end={item.end} className={({ isActive }) => `flex items-center gap-2 rounded-md px-3 py-2 text-sm ${isActive ? 'bg-blue-600 text-white' : 'hover:bg-slate-100 dark:hover:bg-slate-800'}`}>
+                <NavLink key={item.to} to={item.to} end={item.end} className={({ isActive }) => `flex items-center gap-2 rounded-md px-3 py-2 text-sm ${isActive ? 'bg-violet-600 text-white' : 'hover:bg-slate-100 dark:hover:bg-slate-800'}`}>
                   <Icon size={16} /> {item.label}
                 </NavLink>
               );
@@ -45,7 +45,7 @@ export default function AdminLayout() {
           <header className="flex items-center justify-between border-b border-slate-200 bg-white px-4 py-3 dark:border-slate-800 dark:bg-slate-950">
             <h1 className="font-semibold">E-commerce Administration</h1>
             <div className="flex items-center gap-2 md:hidden">
-              <Link to="/" className="text-sm text-blue-600">Store</Link>
+              <Link to="/" className="text-sm text-violet-600">Store</Link>
             </div>
           </header>
           <main className="p-4 md:p-6">

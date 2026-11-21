@@ -64,7 +64,7 @@ export default function AdminCouponsPage() {
           <input type="number" placeholder="Usage limit" value={form.usage_limit} onChange={(e) => updateField('usage_limit', e.target.value)} className="w-full rounded border px-3 py-2 dark:border-slate-700 dark:bg-slate-900" />
           <FieldError errors={errors} name="usage_limit" />
         </div>
-        <button className="rounded bg-blue-600 px-4 py-2 text-white md:col-span-3">Create Coupon</button>
+        <button className="rounded bg-violet-600 px-4 py-2 text-white md:col-span-3">Create Coupon</button>
       </form>
       <div className="overflow-x-auto rounded-xl border border-slate-200 bg-white dark:border-slate-800 dark:bg-slate-950">
         <table className="w-full text-sm"><thead className="bg-slate-50 text-left dark:bg-slate-900"><tr><th className="p-3">Code</th><th>Type</th><th>Value</th><th>Used</th><th>Active</th><th>Actions</th></tr></thead>

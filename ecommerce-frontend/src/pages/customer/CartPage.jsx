@@ -42,7 +42,7 @@ export default function CartPage() {
       {items.length === 0 ? (
         <div className="rounded-xl border border-dashed p-10 text-center dark:border-slate-700">
           <p className="text-slate-500">Your cart is empty.</p>
-          <Link to="/shop" className="mt-4 inline-block rounded-lg bg-blue-600 px-5 py-2 text-white">
+          <Link to="/shop" className="mt-4 inline-block rounded-lg bg-violet-600 px-5 py-2 text-white">
             Continue Shopping
           </Link>
         </div>
@@ -64,7 +64,7 @@ export default function CartPage() {
                   <img src={image} alt={product.name} className="h-24 w-24 rounded-md object-cover" />
                   <div className="flex flex-1 flex-col justify-between">
                     <div>
-                      <Link to={`/products/${product.slug}`} className="font-semibold hover:text-blue-600">
+                      <Link to={`/products/${product.slug}`} className="font-semibold hover:text-violet-600">
                         {product.name || 'Product'}
                       </Link>
                       <p className="text-sm text-slate-500">
@@ -125,11 +125,11 @@ export default function CartPage() {
             <button
               type="button"
               onClick={() => navigate('/checkout')}
-              className="mt-5 w-full rounded-lg bg-blue-600 py-2.5 font-semibold text-white hover:bg-blue-700"
+              className="mt-5 w-full rounded-lg bg-violet-600 py-2.5 font-semibold text-white hover:bg-violet-700"
             >
               Proceed to Checkout
             </button>
-            <Link to="/shop" className="mt-3 block text-center text-sm text-blue-600 hover:underline">
+            <Link to="/shop" className="mt-3 block text-center text-sm text-violet-600 hover:underline">
               Continue Shopping
             </Link>
           </aside>

@@ -24,12 +24,12 @@ export default function Navbar() {
   };
 
   const navLinkClass = ({ isActive }) =>
-    `px-3 py-2 rounded-md text-sm font-medium ${isActive ? 'bg-blue-600 text-white' : 'text-slate-700 hover:bg-slate-100 dark:text-slate-200 dark:hover:bg-slate-800'}`;
+    `px-3 py-2 rounded-md text-sm font-medium ${isActive ? 'bg-violet-600 text-white' : 'text-slate-700 hover:bg-slate-100 dark:text-slate-200 dark:hover:bg-slate-800'}`;
 
   return (
     <header className="sticky top-0 z-40 border-b border-slate-200 bg-white/90 backdrop-blur dark:border-slate-800 dark:bg-slate-950/90">
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-3">
-        <Link to="/" className="text-xl font-bold text-blue-600">LumenStore</Link>
+        <Link to="/" className="text-xl font-bold text-violet-600">LumenStore</Link>
 
         <nav className="hidden items-center gap-1 lg:flex">
           <NavLink to="/" className={navLinkClass}>{t('home')}</NavLink>
@@ -56,7 +56,7 @@ export default function Navbar() {
           <Link to="/wishlist" className="rounded-md p-2 hover:bg-slate-100 dark:hover:bg-slate-800"><Heart size={18} /></Link>
           <Link to="/cart" className="relative rounded-md p-2 hover:bg-slate-100 dark:hover:bg-slate-800">
             <ShoppingCart size={18} />
-            {cart?.item_count > 0 && <span className="absolute -right-1 -top-1 rounded-full bg-blue-600 px-1.5 text-xs text-white">{cart.item_count}</span>}
+            {cart?.item_count > 0 && <span className="absolute -right-1 -top-1 rounded-full bg-violet-600 px-1.5 text-xs text-white">{cart.item_count}</span>}
           </Link>
           {isAuthenticated ? (
             <>
@@ -67,7 +67,7 @@ export default function Navbar() {
           ) : (
             <>
               <Link to="/login" className="rounded-md px-3 py-2 text-sm hover:bg-slate-100 dark:hover:bg-slate-800">{t('login')}</Link>
-              <Link to="/register" className="rounded-md bg-blue-600 px-3 py-2 text-sm text-white">{t('register')}</Link>
+              <Link to="/register" className="rounded-md bg-violet-600 px-3 py-2 text-sm text-white">{t('register')}</Link>
             </>
           )}
         </div>

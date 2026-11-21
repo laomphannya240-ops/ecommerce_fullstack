@@ -5,8 +5,8 @@ import api from '../../api/axios';
 const badgeClass = (status) => {
   const classes = {
     pending: 'bg-yellow-100 text-yellow-700',
-    processing: 'bg-blue-100 text-blue-700',
-    shipped: 'bg-indigo-100 text-indigo-700',
+    processing: 'bg-violet-100 text-violet-700',
+    shipped: 'bg-purple-100 text-purple-700',
     delivered: 'bg-green-100 text-green-700',
     completed: 'bg-green-100 text-green-700',
     cancelled: 'bg-red-100 text-red-700',
@@ -41,7 +41,7 @@ export default function MyOrdersPage() {
     <div className="mx-auto max-w-5xl px-4 py-8">
       <div className="mb-6 flex items-center justify-between">
         <h1 className="text-3xl font-bold">My Orders</h1>
-        <Link to="/account" className="text-blue-600 hover:underline">
+        <Link to="/account" className="text-violet-600 hover:underline">
           Account
         </Link>
       </div>
@@ -53,7 +53,7 @@ export default function MyOrdersPage() {
           <p className="text-slate-500">You have no orders yet.</p>
           <Link
             to="/shop"
-            className="mt-4 inline-block rounded-lg bg-blue-600 px-5 py-2 text-white"
+            className="mt-4 inline-block rounded-lg bg-violet-600 px-5 py-2 text-white"
           >
             Start Shopping
           </Link>

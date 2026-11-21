@@ -9,7 +9,7 @@ function ProductSection({ title, products, link, loading, emptyText }) {
     <section className="mx-auto max-w-7xl px-4 py-12">
       <div className="mb-6 flex items-center justify-between">
         <h2 className="text-2xl font-bold">{title}</h2>
-        <Link to={link} className="text-blue-600 hover:underline">
+        <Link to={link} className="text-violet-600 hover:underline">
           View all
         </Link>
       </div>
@@ -53,7 +53,7 @@ export default function HomePage() {
 
   return (
     <div>
-      <section className="relative overflow-hidden bg-gradient-to-r from-blue-600 to-indigo-700 text-white">
+      <section className="relative overflow-hidden bg-gradient-to-r from-violet-600 to-purple-700 text-white">
         <div className="mx-auto grid max-w-7xl items-center gap-8 px-4 py-16 md:grid-cols-2 md:py-24">
           <div>
             <p className="mb-2 inline-block rounded-full bg-white/20 px-3 py-1 text-sm">
@@ -62,13 +62,13 @@ export default function HomePage() {
             <h1 className="text-4xl font-bold leading-tight md:text-5xl">
               {hero?.title || t('heroTitle')}
             </h1>
-            <p className="mt-4 max-w-xl text-blue-100">
+            <p className="mt-4 max-w-xl text-violet-100">
               {hero?.subtitle || t('heroSubtitle')}
             </p>
             <div className="mt-6 flex gap-3">
               <Link
                 to="/shop"
-                className="rounded-lg bg-white px-5 py-3 font-semibold text-blue-700 hover:bg-blue-50"
+                className="rounded-lg bg-white px-5 py-3 font-semibold text-violet-700 hover:bg-violet-50"
               >
                 {t('shopNow')}
               </Link>
@@ -100,7 +100,7 @@ export default function HomePage() {
       <section className="mx-auto max-w-7xl px-4 py-12">
         <div className="mb-6 flex items-center justify-between">
           <h2 className="text-2xl font-bold">{t('categories')}</h2>
-          <Link to="/categories" className="text-blue-600 hover:underline">
+          <Link to="/categories" className="text-violet-600 hover:underline">
             View all
           </Link>
         </div>
@@ -118,7 +118,7 @@ export default function HomePage() {
                   className="h-28 w-full object-cover"
                 />
               ) : (
-                <div className="flex h-28 items-center justify-center bg-blue-50 text-4xl dark:bg-slate-800">
+                <div className="flex h-28 items-center justify-center bg-violet-50 text-4xl dark:bg-slate-800">
                   🛒
                 </div>
               )}
@@ -163,7 +163,7 @@ export default function HomePage() {
       />
 
       <section className="mx-auto max-w-7xl px-4 py-12">
-        <div className="rounded-2xl bg-slate-900 px-6 py-10 text-center text-white dark:bg-blue-950">
+        <div className="rounded-2xl bg-slate-900 px-6 py-10 text-center text-white dark:bg-violet-950">
           <h2 className="text-2xl font-bold">Subscribe to our newsletter</h2>
           <p className="mt-2 text-slate-300">Get updates on new arrivals and special offers.</p>
           <form
@@ -175,7 +175,7 @@ export default function HomePage() {
               placeholder="Enter your email"
               className="flex-1 rounded-lg px-4 py-2 text-slate-900"
             />
-            <button className="rounded-lg bg-blue-600 px-5 py-2 font-semibold hover:bg-blue-700">
+            <button className="rounded-lg bg-violet-600 px-5 py-2 font-semibold hover:bg-violet-700">
               Subscribe
             </button>
           </form>

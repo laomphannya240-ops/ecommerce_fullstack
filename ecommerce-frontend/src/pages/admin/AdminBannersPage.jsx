@@ -65,7 +65,7 @@ export default function AdminBannersPage() {
           <input type="number" placeholder="Sort order" value={form.sort_order} onChange={(e) => updateField('sort_order', Number(e.target.value))} className="w-full rounded border px-3 py-2 dark:border-slate-700 dark:bg-slate-900" />
           <FieldError errors={errors} name="sort_order" />
         </div>
-        <button className="rounded bg-blue-600 px-4 py-2 text-white md:col-span-2">Create Banner</button>
+        <button className="rounded bg-violet-600 px-4 py-2 text-white md:col-span-2">Create Banner</button>
       </form>
       <div className="grid gap-4 md:grid-cols-2">
         {loading ? <p>Loading...</p> : items.map((b) => (

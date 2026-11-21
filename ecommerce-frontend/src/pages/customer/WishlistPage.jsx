@@ -43,7 +43,7 @@ export default function WishlistPage() {
           <p className="text-slate-500">Your wishlist is empty.</p>
           <Link
             to="/shop"
-            className="mt-4 inline-block rounded-lg bg-blue-600 px-5 py-2 text-white"
+            className="mt-4 inline-block rounded-lg bg-violet-600 px-5 py-2 text-white"
           >
             Browse Products
           </Link>

@@ -70,11 +70,11 @@ export default function LoginPage() {
             <FieldError errors={errors} name="password" />
           </div>
           <div className="flex justify-end">
-            <Link to="/forgot-password" className="text-sm text-blue-600 hover:underline">Forgot password?</Link>
+            <Link to="/forgot-password" className="text-sm text-violet-600 hover:underline">Forgot password?</Link>
           </div>
-          <button disabled={loading} className="w-full rounded-lg bg-blue-600 py-2.5 font-semibold text-white hover:bg-blue-700 disabled:opacity-50">{loading ? 'Signing in...' : 'Login'}</button>
+          <button disabled={loading} className="w-full rounded-lg bg-violet-600 py-2.5 font-semibold text-white hover:bg-violet-700 disabled:opacity-50">{loading ? 'Signing in...' : 'Login'}</button>
         </form>
-        <p className="mt-4 text-center text-sm text-slate-500">Don't have an account? <Link to="/register" className="text-blue-600 hover:underline">Register</Link></p>
+        <p className="mt-4 text-center text-sm text-slate-500">Don't have an account? <Link to="/register" className="text-violet-600 hover:underline">Register</Link></p>
         <div className="mt-4 rounded-md bg-slate-50 p-3 text-xs text-slate-500 dark:bg-slate-800">
           <p><strong>Demo Admin:</strong> admin@lumen.test / password</p>
           <p><strong>Demo Customer:</strong> customer@lumen.test / password</p>

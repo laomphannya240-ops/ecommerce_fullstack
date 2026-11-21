@@ -87,9 +87,9 @@ export default function RegisterPage() {
             <input id="password_confirmation" type="password" name="password_confirmation" required value={form.password_confirmation} onChange={onChange} className="w-full rounded-md border px-3 py-2 dark:border-slate-700 dark:bg-slate-950" />
             <FieldError errors={errors} name="password_confirmation" />
           </div>
-          <button disabled={loading} className="w-full rounded-lg bg-blue-600 py-2.5 font-semibold text-white hover:bg-blue-700 disabled:opacity-50">{loading ? 'Creating...' : 'Register'}</button>
+          <button disabled={loading} className="w-full rounded-lg bg-violet-600 py-2.5 font-semibold text-white hover:bg-violet-700 disabled:opacity-50">{loading ? 'Creating...' : 'Register'}</button>
         </form>
-        <p className="mt-4 text-center text-sm text-slate-500">Already have an account? <Link to="/login" className="text-blue-600 hover:underline">Login</Link></p>
+        <p className="mt-4 text-center text-sm text-slate-500">Already have an account? <Link to="/login" className="text-violet-600 hover:underline">Login</Link></p>
       </div>
     </div>
   );

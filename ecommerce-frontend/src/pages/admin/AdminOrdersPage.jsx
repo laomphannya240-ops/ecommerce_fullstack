@@ -96,7 +96,7 @@ export default function AdminOrdersPage() {
                       <div className="flex flex-wrap items-center gap-2">
                         <button
                           onClick={() => view(order.order_number)}
-                          className="text-blue-600"
+                          className="text-violet-600"
                         >
                           View
                         </button>

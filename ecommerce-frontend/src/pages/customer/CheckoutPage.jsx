@@ -144,7 +144,7 @@ export default function CheckoutPage() {
               <button
                 type="button"
                 onClick={() => setShowNewAddress((value) => !value)}
-                className="text-sm text-blue-600 hover:underline"
+                className="text-sm text-violet-600 hover:underline"
               >
                 {showNewAddress ? 'Cancel' : 'Add New'}
               </button>
@@ -181,7 +181,7 @@ export default function CheckoutPage() {
                 ))}
                 <button
                   type="submit"
-                  className="rounded bg-blue-600 px-4 py-2 text-white sm:col-span-2"
+                  className="rounded bg-violet-600 px-4 py-2 text-white sm:col-span-2"
                 >
                   Save Address
                 </button>
@@ -198,7 +198,7 @@ export default function CheckoutPage() {
                     key={address.id}
                     className={`flex cursor-pointer gap-3 rounded-lg border p-3 ${
                       String(addressId) === String(address.id)
-                        ? 'border-blue-600 bg-blue-50 dark:bg-blue-950/30'
+                        ? 'border-violet-600 bg-violet-50 dark:bg-violet-950/30'
                         : 'border-slate-200 dark:border-slate-700'
                     }`}
                   >
@@ -230,7 +230,7 @@ export default function CheckoutPage() {
               <label
                 className={`flex cursor-pointer items-center gap-3 rounded-lg border p-3 ${
                   paymentMethod === 'cod'
-                    ? 'border-blue-600 bg-blue-50 dark:bg-blue-950/30'
+                    ? 'border-violet-600 bg-violet-50 dark:bg-violet-950/30'
                     : 'border-slate-200 dark:border-slate-700'
                 }`}
               >
@@ -245,7 +245,7 @@ export default function CheckoutPage() {
               <label
                 className={`flex cursor-pointer items-center gap-3 rounded-lg border p-3 ${
                   paymentMethod === 'khqr'
-                    ? 'border-blue-600 bg-blue-50 dark:bg-blue-950/30'
+                    ? 'border-violet-600 bg-violet-50 dark:bg-violet-950/30'
                     : 'border-slate-200 dark:border-slate-700'
                 }`}
               >
@@ -332,7 +332,7 @@ export default function CheckoutPage() {
             type="button"
             onClick={placeOrder}
             disabled={loading}
-            className="mt-5 w-full rounded-lg bg-blue-600 py-3 font-semibold text-white hover:bg-blue-700 disabled:opacity-50"
+            className="mt-5 w-full rounded-lg bg-violet-600 py-3 font-semibold text-white hover:bg-violet-700 disabled:opacity-50"
           >
             {loading ? 'Placing Order...' : 'Confirm Order'}
           </button>

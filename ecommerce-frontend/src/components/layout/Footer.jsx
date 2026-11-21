@@ -5,7 +5,7 @@ export default function Footer() {
     <footer className="border-t border-slate-200 bg-white dark:border-slate-800 dark:bg-slate-950">
       <div className="mx-auto grid max-w-7xl gap-8 px-4 py-10 md:grid-cols-4">
         <div>
-          <h3 className="text-lg font-bold text-blue-600">LumenStore</h3>
+          <h3 className="text-lg font-bold text-violet-600">LumenStore</h3>
           <p className="mt-2 text-sm text-slate-600 dark:text-slate-400">Modern e-commerce experience with secure checkout and fast delivery.</p>
         </div>
         <div>

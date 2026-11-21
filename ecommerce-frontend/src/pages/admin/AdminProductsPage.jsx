@@ -68,7 +68,7 @@ export default function AdminProductsPage() {
     <div className="space-y-4">
       <div className="flex items-center justify-between">
         <h2 className="text-2xl font-bold">Products</h2>
-        <button onClick={openCreate} className="rounded-lg bg-blue-600 px-4 py-2 text-white">Add Product</button>
+        <button onClick={openCreate} className="rounded-lg bg-violet-600 px-4 py-2 text-white">Add Product</button>
       </div>
 
       {showForm && (
@@ -135,7 +135,7 @@ export default function AdminProductsPage() {
             <label className="flex items-center gap-2 text-sm"><input type="checkbox" checked={form.is_featured} onChange={(e) => updateField('is_featured', e.target.checked)} /> Featured</label>
           </div>
           <div className="md:col-span-2 flex gap-2">
-            <button className="rounded-lg bg-blue-600 px-4 py-2 text-white">Save</button>
+            <button className="rounded-lg bg-violet-600 px-4 py-2 text-white">Save</button>
             <button type="button" onClick={() => setShowForm(false)} className="rounded-lg border px-4 py-2 dark:border-slate-700">Cancel</button>
           </div>
         </form>
@@ -154,7 +154,7 @@ export default function AdminProductsPage() {
                 <td>{p.stock_quantity}</td>
                 <td>{p.is_active ? 'Active' : 'Inactive'}</td>
                 <td className="space-x-2 py-2">
-                  <button onClick={() => openEdit(p)} className="text-blue-600 hover:underline">Edit</button>
+                  <button onClick={() => openEdit(p)} className="text-violet-600 hover:underline">Edit</button>
                   <button onClick={() => remove(p.slug)} className="text-red-600 hover:underline">Delete</button>
                 </td>
               </tr>

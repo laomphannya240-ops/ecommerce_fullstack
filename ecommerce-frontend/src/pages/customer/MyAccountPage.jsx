@@ -110,7 +110,7 @@ export default function MyAccountPage() {
               <input id="profile-phone" name="phone" value={profile.phone || ''} onChange={onProfileChange} className="w-full rounded border px-3 py-2 dark:border-slate-700 dark:bg-slate-950" />
               <FieldError errors={profileErrors} name="phone" />
             </div>
-            <button disabled={saving} className="rounded-lg bg-blue-600 px-4 py-2 text-white disabled:opacity-50">{saving ? 'Saving...' : 'Save Profile'}</button>
+            <button disabled={saving} className="rounded-lg bg-violet-600 px-4 py-2 text-white disabled:opacity-50">{saving ? 'Saving...' : 'Save Profile'}</button>
           </div>
         </form>
 

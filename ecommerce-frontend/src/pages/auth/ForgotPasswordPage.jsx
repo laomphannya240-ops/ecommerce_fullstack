@@ -46,9 +46,9 @@ export default function ForgotPasswordPage() {
             />
             <FieldError errors={errors} name="email" />
           </div>
-          <button disabled={loading} className="w-full rounded-lg bg-blue-600 py-2.5 font-semibold text-white hover:bg-blue-700 disabled:opacity-50">{loading ? 'Sending...' : 'Send Reset Link'}</button>
+          <button disabled={loading} className="w-full rounded-lg bg-violet-600 py-2.5 font-semibold text-white hover:bg-violet-700 disabled:opacity-50">{loading ? 'Sending...' : 'Send Reset Link'}</button>
         </form>
-        <Link to="/login" className="mt-4 block text-center text-sm text-blue-600 hover:underline">Back to Login</Link>
+        <Link to="/login" className="mt-4 block text-center text-sm text-violet-600 hover:underline">Back to Login</Link>
       </div>
     </div>
   );

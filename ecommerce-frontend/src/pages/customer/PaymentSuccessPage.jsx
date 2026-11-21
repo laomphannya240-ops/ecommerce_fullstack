@@ -19,7 +19,7 @@ export default function PaymentSuccessPage() {
         {orderNumber && (
           <Link
             to={`/account/orders/${orderNumber}`}
-            className="rounded-lg bg-blue-600 px-5 py-2 text-white"
+            className="rounded-lg bg-violet-600 px-5 py-2 text-white"
           >
             View Order
           </Link>
